@@ -4,11 +4,11 @@
 body{
     font-family: "Open Sans", sans-serif;
 }
-li{
+nav li{
     list-style-type:none;
     margin-right:30px;
 }
-a{
+nav a{
     text-decoration:none;
     color: #474747;
     font-size: 1.3rem;
@@ -46,4 +46,33 @@ nav .nav-title > span{
 nav > ul{
     display: flex;
     align-items: center;
+}
+/* Responsive Styles */
+@media screen and (max-width: 576px) {
+    /* Nav Section For Mobile Device */
+    nav, nav > ul{
+        flex-direction: column;
+        padding:10px;
+    }
+    nav > ul{
+        margin-top: 10px;
+    }
+    nav li {
+        margin-top: 20px;
+        margin-right:0;
+    }
+}
+@media screen and (min-width:577px) and (max-width:776px){
+    /* Nav Section For Flagship Mobile Device */
+    nav, nav > ul{
+        flex-direction: column;
+        padding:30px;
+    }
+    nav > ul{
+        margin-right:0;
+    }
+    nav li {
+        margin-top: 20px;
+        margin-right:0;
+    }
 }
