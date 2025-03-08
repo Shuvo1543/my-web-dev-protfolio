@@ -178,6 +178,73 @@ main {
     margin-top:30px;
 }
 
+/* Resume Section Style Started */
+.resume-section > .section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+.resume-container{
+    display:flex;
+    gap:40px;
+}
+.skills-title{
+    color:#474747;
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:30px;
+}
+.skills-card{
+    margin-right:50px;
+}
+.skills-card .card-title{
+    color:#474747;
+    font-size:1.5rem;
+    font-weight:700;
+    margin-top:10px;
+}
+.skills-card .card-sub-title{
+    color:#757575;
+    font-size:1.2rem;
+    font-weight:600;
+    margin-top:10px;
+}
+.skills-card .card-info{
+    color:#757575;
+    margin-bottom:10px;
+    margin-top:20px;
+}
+
+.experience-title{
+    color:#474747;
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:30px;
+}
+.experience-card{
+    margin-right:50px;
+}
+.experience-card .card-info{
+    color:#757575;
+    margin-bottom:10px;
+    margin-top:20px;
+}
+.experience-card .card-title{
+    color:#474747;
+    font-size:1.5rem;
+    font-weight:700;
+    margin-top:10px;
+}
+.experience-card .card-sub-title{
+    color:#757575;
+    font-size:1.2rem;
+    font-weight:600;
+    margin-top:10px;
+}
+.resume-btn{
+    text-align:center;
+    margin-top:20px;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
 
@@ -241,6 +308,22 @@ main {
     }
     .what-i-do .what-i-do-card-container .card{
         margin:0 10px;
+    }
+    /* Resume Section */
+    .resume-container{
+        flex-direction: column;
+    }
+    .skills-card{
+        margin:10px;
+    }
+    .skills-title{
+        margin:10px;
+    }
+    .experience-card{
+        margin:10px;
+    }
+    .experience-title{
+        margin:10px;
     }
 }
 
@@ -307,5 +390,21 @@ main {
     
     .what-i-do .what-i-do-card-container .card{
         margin:0 20px;
+    }
+    /* Resume Section */
+    .resume-container{
+        flex-direction: column;
+    }
+    .skills-card{
+        margin:10px;
+    }
+    .skills-title{
+        margin:10px;
+    }
+    .experience-card{
+        margin:10px;
+    }
+    .experience-title{
+        margin:10px;
     }
 }
