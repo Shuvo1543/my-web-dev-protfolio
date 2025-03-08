@@ -1,45 +1,53 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* Common Styles */
-*{
+* {
     font-family: "Open Sans", sans-serif;
     margin: 0;
 }
-nav li{
-    list-style-type:none;
-    margin-right:30px;
+
+nav li {
+    list-style-type: none;
+    margin-right: 30px;
 }
-nav a{
-    text-decoration:none;
+
+nav a {
+    text-decoration: none;
     color: #474747;
     font-size: 1.3rem;
-    font-weight:400;
+    font-weight: 400;
 }
-.primary-btn{
-    background-color:#FD6E0A;
+
+.primary-btn {
+    background-color: #FD6E0A;
     border-radius: 5px;
     padding: 18px 36px;
-    color:#fff;
-    border:none;
+    color: #fff;
+    border: none;
     font-size: 1.3rem;
-    font-weight:700;
+    font-weight: 700;
 }
-section{
+
+section {
     margin: 6rem 0;
 }
-.section-title{
-    color:#181818;
-    font-weight:700;
-    font-size:2.2rem;
+
+.section-title {
+    color: #181818;
+    font-weight: 700;
+    font-size: 2.2rem;
 }
-.section-info{
+
+.section-info {
     color: #757575;
-    font-size:1.2rem;
-    font-weight:400;
-    margin-top:30px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 30px;
 }
+
 /* Header Section Style */
-header{
+header {
     background-color: #FFF8F3;
     background-image: url("../images/header_bg.png"), url("../images/developer.png");
     background-repeat: no-repeat;
@@ -47,163 +55,257 @@ header{
 }
 
 /* Nav Section Styles */
-nav{
+nav {
     padding: 50px 200px;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-nav .nav-title{
+
+nav .nav-title {
     font-size: 2.8rem;
-    font-weight:800;
+    font-weight: 800;
     color: #181818;
 }
-nav .nav-title > span{
+
+nav .nav-title>span {
     color: #FD6E0A;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
     align-items: center;
 }
+
 /* Banner Related Style */
-.banner{
-    padding:50px 38px 0px 200px;
+.banner {
+    padding: 50px 38px 0px 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.banner .banner-content .banner-greetings{
+
+.banner .banner-content .banner-greetings {
     color: #474747;
-    font-weight:600;
+    font-weight: 600;
     font-size: 2.8rem;
-    margin-top:10px;
+    margin-top: 10px;
 }
-.banner .banner-content .banner-title{
+
+.banner .banner-content .banner-title {
     color: #181818;
-    font-weight:700;
+    font-weight: 700;
     font-size: 5rem;
-    margin-top:10px;
+    margin-top: 10px;
 }
-.banner .banner-content .banner-info{
+
+.banner .banner-content .banner-info {
     color: #757575;
-    font-weight:400;
+    font-weight: 400;
     font-size: 1.2rem;
-    margin-top:10px;
+    margin-top: 10px;
 }
-.banner .banner-content .banner-btn{
-    margin-top:10px;
+
+.banner .banner-content .banner-btn {
+    margin-top: 10px;
 }
-.banner .banner-img img{
-    width:500px;
+
+.banner .banner-img img {
+    width: 500px;
     vertical-align: middle;
 }
+
 /* Main Section Styles Started */
-main{
-    width:1240px;
+main {
+    width: 1240px;
     margin: 0 auto;
 }
+
 /* About Section Related Styles */
-.about{
-    background-color:#FFF8F3;
-    padding:130px 150px;
-    text-align:center;
+.about {
+    background-color: #FFF8F3;
+    padding: 130px 150px;
+    text-align: center;
 }
-.about .about-me-contact{
-    display:flex;
+
+.about .about-me-contact {
+    display: flex;
     justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about .about-me-contact p {
+    color: #757575;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.about .about-me-contact h6 {
+    color: #474747;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* What i do related Style */
+.what-i-do .what-i-do-top-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.what-i-do .what-i-do-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.what-i-do .what-i-do-card-container .card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    padding:30px;
+}
+.card .card-title{
+    color:#181818;
+    font-size:1.2rem;
+    font-weight:700;
     margin-top:30px;
 }
-.about .about-me-contact p{
+.card .card-info{
     color:#757575;
-    font-size: 1.2rem;
     font-weight:400;
+    margin-top:30px;
 }
-.about .about-me-contact h6{
-    color:#474747;
-    font-size: 1.4rem;
-    font-weight:400;
-}
+
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
+
     /* Nav Section For Mobile Device */
-    header{
+    header {
         background-image: none;
     }
-    
-    nav, nav > ul,.banner{
+
+    nav,
+    nav>ul,
+    .banner {
         flex-direction: column;
-        padding:10px;
+        padding: 10px;
     }
-    nav > ul{
+
+    nav>ul {
         margin-top: 10px;
     }
+
     nav li {
         margin-top: 20px;
-        margin-right:0;
+        margin-right: 0;
     }
-    .primary-btn{
-        margin-top:5px;
+
+    .primary-btn {
+        margin-top: 5px;
     }
+
     /* Banner Related Styles */
-    .banner .banner-content .banner-greetings, .banner .banner-content .banner-title, .banner .banner-content .banner-info, .banner .banner-content .banner-btn{
-        margin-top:3px;
+    .banner .banner-content .banner-greetings,
+    .banner .banner-content .banner-title,
+    .banner .banner-content .banner-info,
+    .banner .banner-content .banner-btn {
+        margin-top: 3px;
     }
-    .banner{
-        text-align:center;
-        padding:10px;
+
+    .banner {
+        text-align: center;
+        padding: 10px;
     }
-    .banner .banner-img img{
-        width:100%;
+
+    .banner .banner-img img {
+        width: 100%;
     }
+
     /* Main Related Style */
-    main{
-        width:100%;
+    main {
+        width: 100%;
     }
-    .about{
-        padding:10px;
+
+    .about {
+        padding: 10px;
     }
-    .about .about-me-contact{
+
+    .about .about-me-contact {
         flex-direction: column;
+    }
+    /* What I Do Related Style */
+    .what-i-do .what-i-do-card-container{
+        flex-direction: column;
+    }
+    .what-i-do .what-i-do-card-container .card{
+        margin:0 10px;
     }
 }
-@media screen and (min-width:577px) and (max-width:776px){
+
+@media screen and (min-width:577px) and (max-width:776px) {
+
     /* Nav Section For Flagship Mobile Device */
-    header{
+    header {
         background-image: none;
     }
-    nav, nav > ul, .banner{
+
+    nav,
+    nav>ul,
+    .banner {
         flex-direction: column;
-        padding:30px;
+        padding: 30px;
     }
-    nav > ul{
-        margin-right:0;
+
+    nav>ul {
+        margin-right: 0;
     }
+
     nav li {
         margin-top: 20px;
-        margin-right:0;
+        margin-right: 0;
     }
-    .primary-btn{
-        margin-top:5px;
+
+    .primary-btn {
+        margin-top: 5px;
     }
+
     /* Banner Related Styles */
-    .banner .banner-content .banner-greetings, .banner .banner-content .banner-title, .banner .banner-content .banner-info, .banner .banner-content .banner-btn{
-        margin-top:3px;
+    .banner .banner-content .banner-greetings,
+    .banner .banner-content .banner-title,
+    .banner .banner-content .banner-info,
+    .banner .banner-content .banner-btn {
+        margin-top: 3px;
     }
-    .banner{
-        text-align:center;
-        padding:10px;
+
+    .banner {
+        text-align: center;
+        padding: 10px;
     }
-    .banner .banner-img img{
-        width:100%;
+
+    .banner .banner-img img {
+        width: 100%;
     }
+
     /* Main Related Styles */
-    main{
-        width:100%;
+    main {
+        width: 100%;
     }
-    .about .about-me-contact{
+
+    .about .about-me-contact {
         flex-direction: column;
     }
-    .about{
-        padding:10px;
+
+    .about {
+        padding: 10px;
+    }
+    /* What I Do Related Style */
+    .what-i-do .what-i-do-card-container{
+        flex-direction: column;
+    }
+    
+    .what-i-do .what-i-do-card-container .card{
+        margin:0 20px;
     }
 }
