@@ -24,6 +24,20 @@ nav a{
     font-size: 1.3rem;
     font-weight:700;
 }
+section{
+    margin: 6rem 0;
+}
+.section-title{
+    color:#181818;
+    font-weight:700;
+    font-size:2.2rem;
+}
+.section-info{
+    color: #757575;
+    font-size:1.2rem;
+    font-weight:400;
+    margin-top:30px;
+}
 /* Header Section Style */
 header{
     background-color: #FFF8F3;
@@ -83,6 +97,32 @@ nav > ul{
     width:500px;
     vertical-align: middle;
 }
+/* Main Section Styles Started */
+main{
+    width:1240px;
+    margin: 0 auto;
+}
+/* About Section Related Styles */
+.about{
+    background-color:#FFF8F3;
+    padding:130px 150px;
+    text-align:center;
+}
+.about .about-me-contact{
+    display:flex;
+    justify-content: space-between;
+    margin-top:30px;
+}
+.about .about-me-contact p{
+    color:#757575;
+    font-size: 1.2rem;
+    font-weight:400;
+}
+.about .about-me-contact h6{
+    color:#474747;
+    font-size: 1.4rem;
+    font-weight:400;
+}
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
     /* Nav Section For Mobile Device */
@@ -115,6 +155,16 @@ nav > ul{
     .banner .banner-img img{
         width:100%;
     }
+    /* Main Related Style */
+    main{
+        width:100%;
+    }
+    .about{
+        padding:10px;
+    }
+    .about .about-me-contact{
+        flex-direction: column;
+    }
 }
 @media screen and (min-width:577px) and (max-width:776px){
     /* Nav Section For Flagship Mobile Device */
@@ -145,5 +195,15 @@ nav > ul{
     }
     .banner .banner-img img{
         width:100%;
+    }
+    /* Main Related Styles */
+    main{
+        width:100%;
+    }
+    .about .about-me-contact{
+        flex-direction: column;
+    }
+    .about{
+        padding:10px;
     }
 }
